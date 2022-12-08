@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+
+/* ------技能條------ */
+.skill-bar {
+    width: flex;
+    /* 技能條區塊背景顏色 */
+    background: #d9dadf;
+    border-radius: 10px;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 10px rbga(0, 0, 0, 0.2);
+    font-family: 'IBM Plex Sans Arabic', 'Noto Sans TC', sans-serif;
+}
+
+.skill-bar .bar {
+
+    margin: 20px 0;
+}
+
+.skill-bar .bar-first :first-child {
+    margin-top: 0px;
+
+}
+
+.skill-bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill-bar .bar .info span {
+    font-size: 1em;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    transform: scale(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+        0px 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #23d0b4;
+    position: absolute;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scale(1);
+
+    }
+
+}
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+.progress-line.python span {
+    width: 75%;
+}
+
+.progress-line.go span {
+    width: 30%;
+}
+
+.progress-line.html5 span {
+    width: 43%;
+}
+
+.progress-line.css3 span {
+    width: 30%;
+}
+
+.progress-line.js span {
+    width: 48%;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0    ;
+    top: -20px;
+    color: #000;
+    font-size: 0.75em;
+    font-weight: 500;
+    /* background: #000; */
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.info span{
+    line-height:2.25;
+    color: #000;
+}
+
+.progress-line.python span::after {
+    content: "75%";
+}
+
+.progress-line.go span::after {
+    content: "30%";
+}
+
+.progress-line.html5 span::after {
+    content: "43%";
+}
+
+.progress-line.css3 span::after {
+    content: "30%";
+}
+
+.progress-line.js span::after {
+    content: "48%";
+}
+
+/* ----------------- */

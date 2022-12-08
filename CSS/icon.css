@@ -1,0 +1,41 @@
+
+.icon-dc {
+    background-image: url(/img/discord.png);
+    background-repeat: no-repeat;
+    background-size: 0.3em;
+}
+
+.icon-ig {
+    background-image: url(/img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 0.3em;
+
+}
+
+.icon-tg {
+    background-image: url(/img/telegram.png);
+    background-repeat: no-repeat;
+    background-size: 0.3em;
+
+}
+
+.icon-fb {
+    background-image: url(/img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 0.3em;
+
+}
+
+.icon-gh {
+    background-image: url(/img/github.png);
+    background-repeat: no-repeat;
+    background-size: 0.3em;
+
+}
+
+.icon-email {
+    background-image: url(/img/email.png);
+    background-repeat: no-repeat;
+    background-size: 0.3em;
+
+}

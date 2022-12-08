@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+
+html,
+body {
+    margin: 0px auto;
+    padding: 0;
+    display: justify;
+    background-color: #fafafa;
+    font-family: 'IBM Plex Sans Arabic', 'Noto Sans TC', sans-serif;
+}
+
+p {
+    font-family: 'IBM Plex Sans Arabic', 'Noto Sans TC', sans-serif;
+}
+
+.container {
+    padding: 0.75rem;
+}
+
+.content {
+    font-family: 'IBM Plex Sans Arabic', 'Noto Sans TC', sans-serif;
+
+}
+
+
+.section {
+
+    background-color: #fafafa;
+    min-width: 50%;
+    /* display: flex; */
+    /* flex-direction: row;  */
+}
+
+.block {
+    width: flex;
+    background: #d9dadf;
+    border-radius: 10px;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 10px rbga(0, 0, 0, 0.2);
+    font-family: 'IBM Plex Sans Arabic', 'Noto Sans TC', sans-serif;
+}
+
+
+
+.contact{
+    display: flex;
+    align-items:center;
+}
+
+.contact span{
+    padding: 0.25rem;
+}
+
+p img {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.25rem;
+}
