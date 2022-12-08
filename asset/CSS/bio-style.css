@@ -42,13 +42,16 @@ p {
 
 
 
-.contact{
+.contact,
+.exp {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
-.contact span{
+.contact,
+.exp span {
     padding: 0.25rem;
+    font-family: 'IBM Plex Sans Arabic', 'Noto Sans TC', sans-serif;
 }
 
 p img {
