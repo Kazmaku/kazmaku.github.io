@@ -1,2 +1,0 @@
-# web_final_term_project
-NKUST web_final_term_project
