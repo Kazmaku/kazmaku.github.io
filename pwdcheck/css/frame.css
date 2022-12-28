@@ -1,0 +1,62 @@
+html{
+    background-color: #d9dadf;  
+}
+body {
+    background-color: #d9dadf;
+}
+.body-background {
+    background-color: #d9dadf;
+}
+#rcorners1 {
+    margin:auto;
+    border-radius: 25px;
+    background: url(../img/bg/ice.jpg);
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+    margin-top: 20px;
+}
+.check {
+    border-radius: 25px;
+    background-color: #7411D8;
+    color: white;
+    border: white;
+    
+}
+.password{
+    margin-left:auto;
+}
+.btn1{
+    padding-top: 50px;
+}
+#rcorners2 {
+    margin:auto;
+    border-radius: 25px;
+    background: url(../img/bg/cat.png);
+    /* background-color: 	#DCB5FF; */
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+#result {
+    white-space: nowrap; 
+}
+.inresult {
+    display: inline-block; 
+}
+figure {
+    text-align:center;
+    background-color: #d9dadf;
+}
+.contact {
+    background-color: #d9dadf;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contact img {
+    margin-top:100px;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+}
