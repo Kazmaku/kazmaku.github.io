@@ -1,0 +1,135 @@
+:root {
+    --bg: #1a1b26;
+    --text: #c0caf5;
+    --accent: #e06c75;
+    --border: #414868;
+    --secondary: #a9b1d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.bio {
+    font-size: 1rem;
+    color: var(--secondary);
+    text-transform: lowercase;
+    margin-bottom: 1.5rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.about {
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill {
+    background: #292e42;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    border: 1px solid var(--border);
+    text-transform: lowercase;
+}
+
+.projects {
+    margin-top: 2rem;
+}
+
+.project {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #24283b;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-transform: lowercase;
+}
+
+.project-desc {
+    font-size: 0.875rem;
+    color: var(--secondary);
+    text-transform: lowercase;
+}
+
+.emphasis {
+    text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
