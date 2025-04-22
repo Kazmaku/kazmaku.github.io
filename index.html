@@ -31,7 +31,6 @@
 
         <div class="about">
             <p><span class="emphasis">專注本質</span>。簡化繁複。</p>
-            <p>信仰極簡主義。效率至上。</p>
         </div>
 
         <div id="skills" class="skills">
@@ -45,7 +44,7 @@
 
         async function loadData() {
             try {
-                const skillsResponse = await fetch('./asset/data/skills.json');
+                const skillsResponse = await fetch('/asset/data/projects.json');
                 const skillsData = await skillsResponse.json();
                 const skillsContainer = document.getElementById('skills');
 
@@ -56,7 +55,7 @@
                     skillsContainer.appendChild(skillElement);
                 });
 
-                const projectsResponse = await fetch('./asset/data/projects.json');
+                const projectsResponse = await fetch('/asset/data/projects.json');
                 const projectsData = await projectsResponse.json();
                 const projectsContainer = document.getElementById('projects');
 
