@@ -114,13 +114,11 @@ h1 {
 .project-title {
     font-weight: 600;
     margin-bottom: 0.25rem;
-    text-transform: lowercase;
 }
 
 .project-desc {
     font-size: 0.875rem;
     color: var(--secondary);
-    text-transform: lowercase;
 }
 
 .emphasis {
