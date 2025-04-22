@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>/root</title>
-    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="profile">
-            <img src="/asset/img/nl_ws.png" alt="avatar" class="avatar">
+            <img src="./asset/img/nl_ws.png" alt="avatar" class="avatar">
             <div>
                 <h1>/Kazmaku</h1>
                 <p class="bio">「簡潔。直接。<span class="emphasis">本質</span>」</p>
@@ -44,7 +44,7 @@
 
         async function loadData() {
             try {
-                const skillsResponse = await fetch('/asset/data/projects.json');
+                const skillsResponse = await fetch('./asset/data/projects.json');
                 const skillsData = await skillsResponse.json();
                 const skillsContainer = document.getElementById('skills');
 
@@ -55,7 +55,7 @@
                     skillsContainer.appendChild(skillElement);
                 });
 
-                const projectsResponse = await fetch('/asset/data/projects.json');
+                const projectsResponse = await fetch('./asset/data/projects.json');
                 const projectsData = await projectsResponse.json();
                 const projectsContainer = document.getElementById('projects');
 
